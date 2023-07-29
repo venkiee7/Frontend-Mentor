@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    top: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+}
+
+
+#imgheader{
+    width: 500px;
+    height: 400px; 
+    mix-blend-mode: multiply;
+    opacity: 75%;
+}
+
+.sectionright{
+    background-color: hsl(277, 64%, 61%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.sectionleft{
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px 0px 0px 10px;
+    width: 500px;
+    height: 405px;
+    padding: 60px 90px;
+}
+
+#title{
+    margin-bottom: 40px;
+    color: hsl(0, 0%, 100%);
+}
+
+#desc{
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+#diff{
+    color: hsl(277, 64%, 61%);
+}
+
+.stats{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total{
+    color: white;
+}
+
+.statstitle{
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media screen and (max-width: 750px)  {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: hsl(233, 47%, 7%);
+    }
+
+    #imgheader{
+        width: 250px;
+        height: 200px; 
+        mix-blend-mode: multiply;
+        opacity: 75%;
+    }
+    
+    .sectionright{
+        background-color: hsl(277, 64%, 61%);
+        border-radius: 10px 10px 0px 0px;    
+    }
+
+    .sectionleft{
+        background-color: hsl(244, 38%, 16%);
+        border-radius: 0px 0px 10px 10px;
+        width: 250px;
+        height: 350px;
+        padding: 0px 0px;
+    }
+    
+    #title{
+        margin-bottom: 0px;
+        color: hsl(0, 0%, 100%);
+        font-size: medium;
+        text-align: center;
+        padding: 10px 60px;
+    }
+    
+    #desc{
+        color: hsla(0, 0%, 100%, 0.6);
+        text-align: center;
+        padding: 10px 10px;
+    }
+    
+    #diff{
+        color: hsl(277, 64%, 61%);
+    }
+    
+    .stats{
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .total{
+        color: white;
+        text-align: center;
+        font-size: large;
+        padding: 8px;
+    }
+
+    .statstitle{
+        color: hsla(0, 0%, 100%, 0.6);
+    }
+    
+}
