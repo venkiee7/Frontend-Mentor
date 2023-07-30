@@ -1,0 +1,133 @@
+:root {
+    --color-dark-cyan: hsl(185, 75%, 39%);
+    --color-dark-blue: hsl(229, 23%, 23%);
+    --color-gray-blue: hsl(227, 10%, 46%);
+    --color-dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    width: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--color-dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 50vw bottom 17vw ,left 105vh top 25vw;
+
+}
+
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 350px;
+    height: 374px;
+    margin: 173px;
+    position: relative;
+    border-radius: 15px;
+
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-decoration {
+    position: absolute;
+    width: 350px;
+    height: 140px;
+    border-radius: 15px 15px 0 0;
+    top: 0;
+}
+
+.content-container h2  {
+    color: var(--color-dark-blue);
+}
+
+.content-container h2 span {
+    color: var(--color-gray-blue);
+    font-weight: 400;
+}
+
+.portrait {
+    position: absolute;
+    top: 80px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 160px 0 0 0;
+    font-weight: 400;
+    color: var(--color-dark-gray);
+    padding: 212px 0 0 0;
+}
+
+.content-container .london {
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #E8E9EC;
+    width: 100%;
+}
+
+/* .line {
+    border: 1px solid #E8E9EC;
+    width: 100%;
+    
+} */
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+}
+
+.followers, .likes, .photos {
+    display: flex;
+    /* align-items: center; */
+    width: 50px;
+    font-weight: 400;
+    color: var(--color-gray-blue);
+    font-size: 10px;
+}
+
+.followers span {
+    font-weight: 700;
+    color: var(--color-dark-blue);
+    font-size: 18px;
+}
+
+.likes span {
+    font-weight: 700;
+    color: var(--color-dark-blue);
+    font-size: 18px;
+}
+
+.photos span {
+    font-weight: 700;
+    color: var(--color-dark-blue);
+    font-size: 18px;
+}
