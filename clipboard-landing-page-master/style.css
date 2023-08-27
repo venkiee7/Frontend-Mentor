@@ -1,0 +1,378 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 200px;
+}
+
+.headersection{
+    margin: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerlogo{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+#headerdesc{
+    text-align: center;
+    padding: 20px 500px;
+    color: hsl(210, 10%, 33%);
+}
+
+.downloadbuttons{
+    display: flex;
+    gap: 20px;
+}
+
+.downloadbuttons > button{
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+}
+
+#iosdownload{
+    background-color: hsl(171, 66%, 44%);
+}
+
+#macdownload{
+    background-color: hsl(233, 100%, 69%);
+}
+
+.trackingsection{
+    margin: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#trackingdesc{
+    text-align: center;
+    padding: 20px 480px 40px 480px;
+    color: hsl(210, 10%, 33%);
+}
+
+.imagetext{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#trackingimage{
+    height: 300px;
+    width: 400px;
+}
+
+.textsection{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.trackingfeature{
+    padding: 5px 0px;
+}
+
+.accessection{
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#accessdesc{
+    text-align: center;
+    padding: 20px 480px 40px 480px;
+    color: hsl(210, 10%, 33%);
+}
+
+#accessimage{
+    display: flex;
+    /* padding-top: 40px; */
+    width: 600px;
+    height: 400px;
+}
+
+.supersection{
+    margin: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#superdesc{
+    text-align: center;
+    padding: 20px 480px 40px 480px;
+    color: hsl(210, 10%, 33%);
+}
+
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.featuretext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+}
+
+.featureimage{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#blacklist{
+    /* margin-bottom: 30px; */
+    width: 30px;
+    height: 40px;
+}
+
+.featuredesc{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    color: hsl(210, 10%, 33%);
+}
+
+.logosection{
+    display: flex;
+    margin: 40px 0px 40px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.clipboardsection{
+    margin: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clipboarddesc{
+    text-align: center;
+    padding: 20px 480px 40px 480px;
+    color: hsl(210, 10%, 33%);
+}
+
+.footersection{
+    margin: 40px 0px 0px 0px;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    display: flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    background-color: hsl(201, 11%, 66%);
+}
+
+.footersociallogo{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footertext{
+    display: flex;
+    gap: 100px;
+}
+
+#footerlogo{
+    height: 50px;
+    width: 50px;
+}
+
+button{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+        background-image: url(images/bg-header-mobile.png);
+    }
+
+    .headersection > h1{
+        text-align: center;
+        width: 100vw;
+        padding: 0px 40px;
+    }
+    
+    #headerlogo{
+        height: 50px;
+        width: 50px;
+        margin-bottom: 40px;
+    }
+    
+    #headerdesc{
+        text-align: center;
+        padding: 20px 50px;
+        color: hsl(210, 10%, 33%);
+    }
+    
+    .downloadbuttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .trackingsection > h3{
+        text-align: center;
+        width: 100vw;
+        padding: 0px 80px;
+    }
+    
+    #trackingdesc{
+        width: 100vw;
+        text-align: center;
+        padding: 20px 50px;
+        color: hsl(210, 10%, 33%);
+    }
+    
+    .imagetext{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    #trackingimage{
+        height: 200px;
+        width: 300px;
+    }
+    
+    .textsection{
+        height: 300px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .accessection > h3{
+        text-align: center;
+        width: 100vw;
+        padding: 0px 80px;
+    }
+    
+    #accessdesc{
+        width: 100vw;
+        text-align: center;
+        padding: 20px 50px;
+        color: hsl(210, 10%, 33%);
+    }
+    
+    #accessimage{
+        display: flex;
+        /* padding-top: 40px; */
+        width: 300px;
+        height: 200px;
+    }
+    
+    .supersection > h3{
+        text-align: center;
+        width: 100vw;
+        padding: 0px 80px;
+    }
+    
+    #superdesc{
+        width: 100vw;
+        text-align: center;
+        padding: 20px 50px;
+        color: hsl(210, 10%, 33%);
+    }
+    
+    .features{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .logosection{
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0px 40px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .clipboardsection > h3{
+        text-align: center;
+        width: 100vw;
+        padding: 0px 80px;
+    }
+    
+    .clipboarddesc{
+        width: 100vw;
+        text-align: center;
+        padding: 20px 50px;
+        color: hsl(210, 10%, 33%);
+    }
+    
+    .footersection{
+        margin: 40px 0px 0px 0px;
+        padding: 20px 0px 20px 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 40px;
+        background-color: hsl(201, 11%, 66%);
+    }
+    
+    .footersociallogo{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .footertext{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
