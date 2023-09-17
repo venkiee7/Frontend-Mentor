@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    gap: 10px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 30px;
+    gap: 20px;
+}
+
+.left h1{
+    font-size: xxx-large;
+    color: white;
+}
+
+.left p{
+    color: white;
+    line-height: 25px;
+    font-weight: medium;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.above{
+    background-color: hsl(248, 32%, 49%);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.try{
+    font-weight: bold;
+    color: white;
+}
+
+.price{
+    font-weight: lighter;
+    color: hsl(246, 25%, 77%);
+}
+
+.below{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+    padding: 40px 40px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form input{
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+.claim{
+    background-color: hsl(154, 59%, 51%);
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0 5px hsla(154, 89%, 22%, 0.708);
+}
+
+.agreement{
+    text-align: center;
+    font-size: small;
+}
+
+.click{
+    color: hsl(246, 25%, 77%);
+}
+
+.terms{
+    color: hsl(0, 100%, 74%);
+    font-weight: bolder;
+}
+
+.claim:hover{
+    cursor: pointer;
+}
+
+.terms:hover{
+    cursor: pointer;
+}
+
+.error-container {
+    position: relative;
+}
+
+.icon-error {
+    position: absolute;
+    right: 15px;
+    bottom: 45px;
+}
+
+.error {
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    text-align: right;
+    font-size: 12px;
+    margin: 0px 0px 10px 0px;
+    font-weight: bold;
+}

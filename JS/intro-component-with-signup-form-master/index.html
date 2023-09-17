@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="right">
+      <div class="above">
+        <p class="try">Try it free 7 days<span class="price"> then $20/mo. thereafter</span></p>
+      </div>
+      <div class="below">
+        <form action="submit" class="form">
+          <input type="text" placeholder="First Name" id="firstNameInput">
+          <div id="firstnameError" class="error-container">
+            <!-- <img class="icon-error" src="./images/icon-error.svg" alt="error" />
+            <p class="error">First Name cannot be empty</p> -->
+          </div>
+          <input type="text" placeholder="Last Name" id="lastnameInput">
+          <div id="lastnameError" class="error-container"></div>
+          <input type="email" placeholder="Email Address" id="emailInput">
+          <div id="emailError" class="error-container"></div>
+          <input type="password" placeholder="Password" id="passInput">
+          <div id="passError" class="error-container"></div>
+        </form>
+        <div class="claim">
+          <p>Claim your free trial</p>
+        </div>
+        <div class="agreement">
+          <p class="click">By clicking the button, you are agreeing to our <a class="terms"> Terms and
+              Services</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
