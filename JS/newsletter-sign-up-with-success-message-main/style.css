@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(235, 18%, 26%);
+}
+
+.sign-up{
+    display: flex;
+    gap: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    height: 500px;
+    width: 800px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    padding: 70px 40px;
+    width: 500px;
+    gap: 10px;
+    font-weight: medium;
+}
+
+.left h1{
+    font-size: 55px;
+    width: 100%;
+}
+
+.left li {
+    background-image: url('assets/images/icon-list.svg'); 
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left: 30px; 
+    margin-bottom: 10px; 
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.field p{
+    font-weight: bold;
+    font-size: small;
+}
+
+.left input{
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 7%, 60%);
+    cursor: pointer;
+    /* background-color: hsl(5, 78%, 78%); */
+}
+
+.btn{
+    padding: 15px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+}
+
+.right{
+    display: flex;
+    width: 400px;
+    padding: 20px;
+}
+
+.list{
+    list-style: none;
+}
+
+.error-container{
+    display: none;
+    position: absolute;
+    top: 390px;
+    right: 790px;
+    color: hsl(4, 100%, 67%);
+    font-weight: bold;
+    font-size: small;
+}
+
+.success{
+    display: none;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px 30px;
+    gap: 30px;
+    border-radius: 30px;
+}
+
+.success img{
+    height: 40px;
+    width: 40px;
+}
+
+.success h1{
+    font-size: xxx-large;
+    color: hsl(234, 29%, 20%);
+    font-weight: bolder;
+    line-height: 0.9;
+}
+
+.success button{
+    width: 100%;
+}
+
+.insertemail{
+    font-weight: bold;
+}
