@@ -1,0 +1,392 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    /* height: 100vh; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 300px; 
+    gap: 30px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu{
+    display: none;
+}
+
+.menuclose{
+    display: none;
+}
+
+.navlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    color: hsl(236, 13%, 42%);
+}
+
+.middle{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    /* width: 60%; */
+}
+
+.desktop{
+    width: 600px;
+    height: 250px;
+}
+
+.mobile{
+    display: none;
+}
+
+.qna{
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    width: 600px;
+    gap: 30px;
+}
+
+.que{
+    font-size: xxx-large;
+    line-height: 50px;
+    width: 40%;
+    color: hsl(240, 100%, 5%);
+    font-weight: 1200;
+}
+
+.ans{
+    padding: 10px 20px;  
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: hsl(236, 13%, 42%);
+}
+
+.btn{
+    width: 180px;
+    padding: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    color: hsl(36, 100%, 99%);
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(240, 100%, 5%);
+    padding: 20px;
+    gap: 20px;
+}
+
+.right h1{
+    color: hsl(35, 77%, 62%);
+}
+
+.brief{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    color: hsl(36, 100%, 99%);
+    border-bottom: 2px solid hsl(236, 13%, 42%);
+    gap: 10px;
+}
+
+.brief p{
+    color: hsl(233, 8%, 79%);
+}
+
+.bottom{
+    display: flex;
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    gap: 10px;
+    /* width: 300px; */
+}
+
+.card img{
+    height: 100px;
+}
+
+.index{
+    color: hsl(233, 8%, 79%);
+}
+
+.title{
+    color: hsl(240, 100%, 5%);
+    font-weight: bold;
+}
+
+.desc{
+    color: hsl(236, 13%, 42%);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: hsl(240, 100%, 5%);
+}
+
+.navlinks li:hover{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.brief h3:hover{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.title:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        /* height: 100vh; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 10px; 
+        gap: 20px;
+    }
+    
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .menu{
+        display: block;
+        margin: auto;
+        width: 50px;
+    }
+
+    .menu:hover{
+        cursor: pointer;
+    }
+
+    .menuclose{
+        /* display: block; */
+        display: none;
+        margin: auto;
+        width: 30px;
+        z-index: 1;
+    }
+
+    .menuclose:hover{
+        cursor: pointer;
+    }
+
+    .sidebar{
+        display: none;
+        position: absolute;
+        background-color: hsl(36, 100%, 99%);
+        left: 90px;
+        top: 0%;
+        width: 180px;
+        height: 600px;
+    }
+    
+    .navlinks{
+        display: none;
+        z-index: 1;
+        flex-direction: column;
+        position: absolute;
+        left: 100px;
+        top: 110px;
+        /* justify-content: center; */
+        align-items: flex-start;
+        list-style: none;
+        padding: 10px;
+        font-weight: bold;
+        /* margin: 0px; */
+        gap: 20px;
+        color: hsl(236, 13%, 42%);
+    }
+    
+    .middle{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .left{
+        display: flex;
+        flex-direction: column;
+        /* width: 60%; */
+    }
+
+    .desktop{
+        display: none;
+    }
+    
+    .mobile{
+        display: flex;
+        /* width: 300px;
+        height: 250px; */
+        width: 240px;
+    }
+    
+    .qna{
+        padding: 20px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        width: 600px;
+        gap: 30px;
+    }
+    
+    .que{
+        font-size: 35px;
+        line-height: 40px;
+        width: 40%;
+        color: hsl(240, 100%, 5%);
+        font-weight: 1200;
+    }
+    
+    .ans{
+        padding: 0px 0px;  
+        width: 40%;
+        font-size: smaller;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: hsl(236, 13%, 42%);
+    }
+    
+    .btn{
+        width: 160px;
+        padding: 10px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        background-color: hsl(5, 85%, 63%);
+        border: none;
+        color: hsl(36, 100%, 99%);
+    }
+    
+    .right{
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(240, 100%, 5%);
+        padding: 10px;
+        gap: 20px;
+    }
+    
+    .right h1{
+        color: hsl(35, 77%, 62%);
+    }
+    
+    .brief{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        color: hsl(36, 100%, 99%);
+        border-bottom: 2px solid hsl(236, 13%, 42%);
+        gap: 10px;
+    }
+    
+    .brief p{
+        font-size: small;
+        color: hsl(233, 8%, 79%);
+    }
+    
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* width: 240px; */
+    }
+    
+    .card{
+        display: flex;
+        /* flex-wrap: wrap; */
+        gap: 10px;
+        width: 350px;
+    }
+    
+    .card img{
+        height: 100px;
+        /* width: 70px; */
+    }
+    
+    .index{
+        color: hsl(233, 8%, 79%);
+    }
+    
+    .title{
+        color: hsl(240, 100%, 5%);
+        font-weight: bold;
+    }
+    
+    .desc{
+        color: hsl(236, 13%, 42%);
+        font-size: small;
+        width: 150px;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .btn:hover{
+        cursor: pointer;
+        background-color: hsl(240, 100%, 5%);
+    }
+    
+    .navlinks li:hover{
+        color: hsl(35, 77%, 62%);
+        cursor: pointer;
+    }
+    
+    .brief h3:hover{
+        color: hsl(35, 77%, 62%);
+        cursor: pointer;
+    }
+    
+    .title:hover{
+        color: hsl(5, 85%, 63%);
+        cursor: pointer;
+    }
+}
