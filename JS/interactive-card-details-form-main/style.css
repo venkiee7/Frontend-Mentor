@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    gap: 80px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/bg-main-desktop.png");
+    height: 100%;
+    /* gap: 20px; */
+}
+
+.cardfront{
+    position: relative;
+    left: 150px;
+    top: 50px;
+}
+
+.cardlogo{
+    position: relative;
+    bottom: 170px;
+}
+
+.cardnumber{
+    position: relative;
+    bottom: 360px;
+    left: 150px;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 5px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    /* gap: 210px; */
+    position: relative;
+    bottom: 330px;
+    left: 150px;
+    color: hsl(0, 0%, 100%);
+}
+
+.cardholder{
+    text-transform: uppercase;
+}
+
+.cardback{
+    position: relative;
+    left: 250px;
+    top: 30px;
+}
+
+.cvc{
+    position: relative;
+    bottom: 160px;
+    left: 400px;
+    letter-spacing: 5px;
+    color: hsl(0, 0%, 100%);
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.form{
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+}
+
+.input{
+    padding: 10px;
+    border-radius: 5px;
+    /* border: none; */
+    border: 1px solid hsl(270, 3%, 87%);
+}
+
+.inputnum{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+}
+
+.input{
+    cursor: pointer;
+}
+
+.inputexp{
+    width: 80px;
+}
+
+.expiry{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.inputexpiry{
+    display: flex;
+    gap: 10px;
+}
+
+.pin{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputcsv{
+    width: 160px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accept{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn{
+    width: 350px;
+    padding: 15px;
+    background-color: hsl(278, 68%, 11%);
+    border: none;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+}
+
+.btn:hover{
+    cursor: pointer;
+}
