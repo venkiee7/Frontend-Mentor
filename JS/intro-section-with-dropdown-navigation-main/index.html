@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <ul class="navlinks">
+        <nav class="extra extrafeatures">
+          <li class="links">Features</li>
+          <img class="arrowdown" src="images/icon-arrow-down.svg" alt="arrowdown">
+        </nav>
+        <nav class="extra extracompanys">
+          <li class="links">Company</li>
+          <img class="arrowdown" src="images/icon-arrow-down.svg" alt="arrowdown">
+        </nav>
+        <li class="links">Careers</li>
+        <li class="links">About</li>
+      </ul>
+      <div class="auth">
+        <button class="login">Login</button>
+        <button class="register">Register</button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="left">
+        <h1 class="motive">Make remote work</h1>
+        <p class="desc">Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.</p>
+        <button class="learn">Learn more</button>
+        <div class="clients">
+          <img src="images/client-databiz.svg" alt="">
+          <img src="images/client-audiophile.svg" alt="">
+          <img src="images/client-meet.svg" alt="">
+          <img src="images/client-maker.svg" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <img src="images/image-hero-desktop.png" alt="">
+      </div>
+    </div>
+    <ul class="dropdown features">
+      <div class="content">
+        <img src="images/icon-todo.svg" alt="">
+        <li>Todo List</li>
+      </div>
+      <div class="content">
+        <img src="images/icon-calendar.svg" alt="">
+        <li>Calender</li>
+      </div>
+      <div class="content">
+        <img src="images/icon-reminders.svg" alt="">
+        <li>Reminders</li>
+      </div>
+      <div class="content">
+        <img src="images/icon-planning.svg" alt="">
+        <li>Planning</li>
+      </div>
+    </ul>
+    <ul class="dropdown company">
+      <div class="consist">
+        <li>History</li>
+        <li>Our Team</li>
+        <li>Blog</li>
+      </div>
+    </ul>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
