@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <div>
+        <img class="logo" src="images/logo.svg" alt="">
+      </div>
+      <div class="content">
+        <div class="left">
+          <div class="info">
+            <div class="detaildollar">
+              <label for="bill">Bill</label>
+              <p class="errordollar">Can't be zero</p>
+            </div>
+            <input class="input inputdollar" type="number" placeholder="0">
+            <img class="dollar" src="images/icon-dollar.svg" alt="">
+          </div>
+          <div class="info">
+            <label for="tip">Select Tip %</label>
+            <div class="buttons">
+              <button class="btn">5%</button>
+              <button class="btn">10%</button>
+              <button class="btn">15%</button>
+              <button class="btn">20%</button>
+              <button class="btn">25%</button>
+              <button class="custom">Custom</button>
+            </div>
+          </div>
+          <div class="info">
+            <img class="person" src="images/icon-person.svg" alt="">
+            <div class="detailperson">
+              <label for="people">Number of People</label>
+              <p class="errorperson">Can't be zero</p>
+            </div>
+            <input class="input inputperson" type="number" placeholder="0">
+            <!-- <input type="number" class="input"> -->
+          </div>
+        </div>
+        <div class="right">
+          <div class="result">
+            <div>
+              <h2 class="heading">Tip Amount</h2>
+              <p class="desc">/ person</p>
+            </div>
+            <div class="value">
+              <!-- <img class="sign" src="images/icon-dollar.svg" alt=""> -->
+              <h1 class="amount tipperperson">$0.00</h1>
+            </div>
+          </div>
+          <div>
+            <div class="result">
+              <div>
+                <h2 class="heading">Total</h2>
+                <p class="desc">/ person</p>
+              </div>
+              <div class="value">
+                <!-- <img class="sign" src="images/icon-dollar.svg" alt=""> -->
+                <h1 class="amount amountperperson">$0.00</h1>
+              </div>
+            </div>
+          </div>
+          <button class="resetbtn">Reset</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

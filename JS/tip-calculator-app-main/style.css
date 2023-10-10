@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    /* gap: 40px; */
+    background-color: hsl(185, 41%, 84%);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;    
+    gap: 60px;
+    height: 100vh;
+}
+
+.logo{
+    margin-top: 100px;
+    height: 50px;
+    width: 50px;
+    /* text-align: center; */
+}
+
+.content{
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    /* width: 600px; */
+    /* height: 300px; */
+    border-radius: 20px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    padding: 10px;
+    width: 350px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.btn{
+    text-align: center;
+    width: 96px;
+    height: 40px;
+    border: none;
+    padding: 10px 0px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    font-size: large;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
+    width: 350px;
+    gap: 20px;
+}
+
+.input{
+    padding: 10px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    font-weight: bold;
+}
+
+.custom{
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    /* font-size: large; */
+}
+
+.dollar{
+    position: relative;
+    height: 20px;
+    width: 10px;
+    bottom: 38px;
+    left: 10px;
+    /* padding: 10px; */
+}
+
+.person{
+    /* display: flex; */
+    position: relative;
+    height: 20px;
+    width: 10px;
+    top: 66px;
+    left: 10px;
+}
+
+.result{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.value{
+    display: flex;
+    gap: 5px;
+    color: hsl(172, 67%, 45%);
+}
+
+.sign{
+    margin-top: 5px;
+    height: 30px;
+    width: 20px;
+}
+
+.resetbtn{
+    margin-top: 120px;
+    padding: 10px;
+    text-transform: uppercase;
+    border: none;
+    background-color: hsl(186, 85%, 24%);
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+}
+
+.amount{
+    letter-spacing: 5px;
+}
+
+.heading{
+    color: hsl(0, 0%, 100%);
+    font-size: medium;
+}
+
+.desc{
+    color: hsl(186, 14%, 43%);
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
+/* .custom:hover{
+    border: 2px solid hsl(172, 67%, 45%);
+} */
+
+.input:hover{
+    cursor: pointer;
+    border: 2px solid hsl(172, 67%, 45%);
+}
+
+.resetbtn:hover{
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
+.input::placeholder {
+    display: flex;
+    text-align: right;
+    font-weight: bold;
+}
+
+.detaildollar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.detailperson{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 40px; */
+    /* flex-direction: column; */
+}
+
+.errordollar{
+    display: none;
+    color: red;
+}
+.errorperson{
+    display: none;
+    color: red;
+}
+
+.selected{
+    background-color: hsl(172, 67%, 45%);
+}
+
+.custom{
+    text-align: center;
+    width: 96px;
+    height: 40px;
+    border: none;
+    padding: 10px 0px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    font-size: large;
+}
+
+.custom:hover{
+    cursor: pointer;
+    background-color: hsl(172, 67%, 45%);
+}
+
+.customdetail{
+    text-align: right;
+    width: 96px;
+    height: 40px;
+    border: none;
+    padding: 10px 0px;
+    /* background-color: hsl(183, 100%, 15%); */
+    color: black;
+    border-radius: 5px;
+    /* color: hsl(0, 0%, 100%); */
+    border: 2px solid hsl(172, 67%, 45%);
+    font-size: large;
+}
