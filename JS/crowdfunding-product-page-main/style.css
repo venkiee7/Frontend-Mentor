@@ -1,0 +1,431 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: rgba(250,250,250,255);
+}
+
+.imgheader{
+    width: 100%;
+    /* height: 400px; */
+    object-fit: cover;
+}
+
+.header{
+    display: flex;
+    position: absolute;
+    margin-top: 60px;
+    padding: 0px 180px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    bottom: 100px;
+    align-self: center;
+}
+
+.contentlogo{
+    position: relative;
+    /* bottom: 0px; */
+    z-index: 1;
+}
+
+.contenttop{
+    padding: 40px 20px;
+    position: relative;
+    width: 610px;
+    bottom: 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.contenttopheader{
+    font-size: x-large;
+    /* font-weight: bold; */
+    margin-bottom: 10px;
+}
+
+.contenttopdesc{
+    margin-bottom: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.backbtn{
+    padding: 10px 40px;
+    height: 50px;
+    border: none;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 50px;
+    color: white;
+}
+
+.bookmark{
+    display: flex;
+}
+
+.bookmarkbtn{
+    display: flex;
+    align-items: center;
+    /* gap: 100px; */
+    padding: 10px 40px;
+    height: 50px;
+    border: none;
+    background-color: lightgray;
+    /* opacity: 0.4; */
+    border-radius: 50px;
+    color: black;
+}
+
+.bookmarklogo{
+    position: relative;
+    left: 35px;
+    height: 50px;
+}
+
+.contentmid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+    position: relative;
+    width: 610px;
+    bottom: 50px;
+    /* text-align: center; */
+    /* justify-content: center; */
+    background-color: white;
+}
+
+.topmid{
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 120px;
+}
+
+.bottommid{
+    display: flex;
+}
+
+.bottommidleft{
+    height: 10px;
+    width: 75%;
+    background-color: hsl(176, 50%, 47%);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.bottommidright{
+    position: relative;
+    right: 10px;
+    height: 10px;
+    width: 25%;
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+.contentbottom{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+    position: relative;
+    width: 610px;
+    bottom: 50px;
+    /* text-align: center; */
+    /* justify-content: center; */
+    background-color: white;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px;
+    border: 1px solid hsl(0, 0%, 48%);
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.head{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardheading{
+    font-size: large;
+}
+
+.carddesc{
+    color: hsl(176, 50%, 47%);
+}
+
+.value{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.left{
+    /* display: flex; */
+    /* justify-content: center; */
+    font-size: medium;
+    color: hsl(0, 0%, 48%);
+}
+
+.rewardbtn{
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.rewardbtncolor{
+    background-color: hsl(176, 50%, 47%);
+}
+
+.rewardbtndull{
+    background-color: hsl(0, 0%, 48%);
+}
+
+.tail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.backbtn:hover{
+    cursor: pointer;
+    background-color: hsl(176, 72%, 28%);
+}
+
+.bookmarkbtn:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+.bookmarklogo:hover{
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rewardbtn{
+    cursor: pointer;
+}
+
+.rewardbtncolor:hover{
+    background-color: hsl(176, 72%, 28%);
+}
+
+.modal{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    /* align-items: center; */
+    width: 610px;
+    left: 455px;
+    top: 200px;
+    background-color: white;
+    z-index: 1;
+    padding: 40px 20px;
+    gap: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.modalcards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modalcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid hsl(0, 0%, 48%);
+}
+
+.modalcarddull{
+    opacity: 0.4;
+}
+
+.modaltop{
+    padding: 20px 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalinfo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    /* border-bottom: 1px solid red; */
+}
+
+.modaldetail{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    color: red;
+}
+
+.modaldesc{
+    padding: 0px 0px 0px 32px;
+    font-size: medium;
+}
+
+.modalname{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.modalpledge{
+    color: hsl(176, 50%, 47%);
+}
+
+.modalleft{
+    /* width: 100%; */
+    margin-left: auto;
+}
+
+.modalselect{
+    border-top: 2px solid hsl(0, 0%, 48%);
+    display: none;
+    /* display: flex; */
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.modalselectright{
+    display: flex;
+    gap: 10px;
+}
+
+.modalvaluebtn{
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 1px solid hsl(0, 0%, 48%);
+    background-color: white;
+}
+
+.modalcontinuebtn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(176, 50%, 47%);
+}
+
+.modalname:hover{
+    cursor: pointer;
+    color: hsl(176, 50%, 47%);
+}
+
+.imgclose:hover{
+    cursor: pointer;
+}
+
+.modalvaluebtn:hover{
+    cursor: pointer;
+}
+
+.modalcontinuebtn:hover{
+    cursor: pointer;
+    background-color: hsl(176, 72%, 28%);
+}
+
+.successmodal{
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    width: 500px;
+    align-items: center;
+    top: 460px;
+    left: 510px;
+    background-color: white;
+    padding: 30px 40px;
+    text-align: center;
+    gap: 20px;
+    z-index: 1;
+}
+
+.successbtn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(176, 50%, 47%);
+}
+
+.successbtn:hover{
+    cursor: pointer;
+    background-color: hsl(176, 72%, 28%);
+}
+
+.closeheader{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imgclose{
+    /* z */
+    height: 20px;
+    width: 20px;
+    text-align: right;
+}
+
+.bordered{
+    border: 2px solid hsl(176, 50%, 47%);
+}
+
+.selected{
+    display: flex;
+}
